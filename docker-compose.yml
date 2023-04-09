@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  run_api:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - 'NEZHA_SERVER=${NEZHA_HOST}'
+      - 'NEZHA_PORT=${NEZHA_PORT}'
+      - 'NEZHA_KEY=${NEZHA_TOKEN}'
